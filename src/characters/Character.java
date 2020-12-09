@@ -6,6 +6,7 @@ public abstract class Character implements CharacterClassInterface {
     protected int life;
     protected int attackPower;
     protected String imageUrl;
+    // TODO : position sur le board || équipements || spells || nom de race
 
     public void setName(String newName) {
         this.name = newName;
@@ -45,15 +46,15 @@ public abstract class Character implements CharacterClassInterface {
         this.imageUrl = newImageUrl;
     }
 
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
     public String getImageUrl() {
         return this.imageUrl;
     }
 
     public String getClassName() {
         return className;
-    }
-
-    public void setClassName(String className) {
-        this.className = className;
     }
 }
